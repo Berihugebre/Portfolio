@@ -5,7 +5,7 @@ import Typical from 'react-typical'
 
 const Home = ()=>{
     return(
-        <Container id="home" fluid  className="d-flex align-items-center justify-content-center" style={{backgroundImage: `url(${bg}` }}>
+        <Container id="home" fluid  className="d-flex align-items-center justify-content-center">
             <Row className="vh-100 align-items-center justify-content-center">
                 <Col sm={12} className="align-items-center mt-5 pt-5" >
                     <h1> Hi <span role="img" aria-label="hi-emoji">👋 </span>{ ''}
@@ -16,7 +16,7 @@ const Home = ()=>{
                         />
                     </h1>
                  <h1>I am Berihu Gebremedhin</h1>
-                 <h2 style={{color:"#101357"}}> And I am a Web Developer </h2>
+                 <h2> And I am a Web Developer </h2>
                  <ListGroup horizontal className="justify-content-center mt-5 pt-3">
                           <ListGroup.Item  style={{border:"none", backgroundColor:"transparent"}}><a href="https://www.facebook.com/mini.max.39794" target="_blank" rel="noopener noreferrer" ><i className="fab fa-linkedin-in fa-2x " ></i></a></ListGroup.Item>
                           <ListGroup.Item style={{border:"none", backgroundColor:"transparent"}}><a href="https://github.com/berihugebre" target="_blank" rel="noopener noreferrer"><i className="fab fa-github fa-2x"></i></a></ListGroup.Item>
