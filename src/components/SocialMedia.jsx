@@ -6,25 +6,25 @@ const SocialMedia = ()=>{
           <div className="text-center text-md-right">
             <ul className="list-unstyled list-inline">
               <li className="list-inline-item">
-                <a className="btn-floating btn-lg rgba-white-slight mx-1" href="https://www.facebook.com/mini.max.39794">
+                <a className="btn-floating btn-lg rgba-white-slight mx-1" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/berihu-gebre/">
                   <i className="fab fa-linkedin-in" />
                 </a>
               </li>
               <li className="list-inline-item">
-                <a className="btn-floating btn-lg rgba-white-slight mx-1" href="https://github.com/berihugebre ">
+                <a className="btn-floating btn-lg rgba-white-slight mx-1" target="_blank" rel="noopener noreferrer" href="https://github.com/berihugebre ">
                   <i className="fab fa-github" />
                 </a>
               </li>
               <li className="list-inline-item">
-                <a className="btn-floating btn-lg rgba-white-slight mx-1" href="https://twitter.com/Berihu74658089">
+                <a className="btn-floating btn-lg rgba-white-slight mx-1" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Berihu74658089">
                   <i className="fab fa-twitter" />
                 </a>
               </li>
-              <li className="list-inline-item">
-                <a className="btn-floating btn-lg rgba-white-slight mx-1" href="https://www.facebook.com/mini.max.39794">
+              {/* <li className="list-inline-item">
+                <a className="btn-floating btn-lg rgba-white-slight mx-1" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/mini.max.39794">
                   <i className="fab fa-facebook-f" />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

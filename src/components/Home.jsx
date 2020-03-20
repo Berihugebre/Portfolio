@@ -1,6 +1,5 @@
 import React from 'react';
 import {Container,Row, Col, ListGroup } from 'react-bootstrap';
-import bg from '../assets/images/bg-3.jpg'
 import Typical from 'react-typical'
 
 const Home = ()=>{
@@ -18,10 +17,10 @@ const Home = ()=>{
                  <h1>I am Berihu Gebremedhin</h1>
                  <h2> And I am a Web Developer </h2>
                  <ListGroup horizontal className="justify-content-center mt-5 pt-3">
-                          <ListGroup.Item  style={{border:"none", backgroundColor:"transparent"}}><a href="https://www.facebook.com/mini.max.39794" target="_blank" rel="noopener noreferrer" ><i className="fab fa-linkedin-in fa-2x " ></i></a></ListGroup.Item>
+                          <ListGroup.Item  style={{border:"none", backgroundColor:"transparent"}}><a href="https://www.linkedin.com/in/berihu-gebre/" target="_blank" rel="noopener noreferrer" ><i className="fab fa-linkedin-in fa-2x " ></i></a></ListGroup.Item>
                           <ListGroup.Item style={{border:"none", backgroundColor:"transparent"}}><a href="https://github.com/berihugebre" target="_blank" rel="noopener noreferrer"><i className="fab fa-github fa-2x"></i></a></ListGroup.Item>
-                          <ListGroup.Item style={{border:"none", backgroundColor:"transparent"}}><a href="https://twitter.com/Berihu74658089" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f fa-2x"></i></a></ListGroup.Item>
-                          <ListGroup.Item style={{border:"none", backgroundColor:"transparent"}}><a href="https://www.facebook.com/mini.max.39794" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter fa-2x"></i></a></ListGroup.Item>
+                          <ListGroup.Item style={{border:"none", backgroundColor:"transparent"}}><a href="https://twitter.com/Berihu74658089" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter fa-2x"></i></a></ListGroup.Item>
+                          {/* <ListGroup.Item style={{border:"none", backgroundColor:"transparent"}}><a href="https://www.facebook.com/mini.max.39794" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f fa-2x"></i></a></ListGroup.Item> */}
                 </ListGroup>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center mt-5">
