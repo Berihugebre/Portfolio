@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49faa5ac3d167e28e645347d93f4abb2",
+    "revision": "b60f61d6bf1fe380b1bcff3e8a3b4c13",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "8a90911c7e6bc58d93ab",
+    "revision": "87f6dda534f47118a606",
     "url": "/Portfolio/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "566941352c79812bfa1a",
+    "revision": "d1480c2438694b6b29ca",
     "url": "/Portfolio/static/css/main.cb6bd365.chunk.css"
   },
   {
-    "revision": "8a90911c7e6bc58d93ab",
-    "url": "/Portfolio/static/js/2.6989d450.chunk.js"
+    "revision": "87f6dda534f47118a606",
+    "url": "/Portfolio/static/js/2.b68f9b53.chunk.js"
   },
   {
     "revision": "11a928b57aca5049fe950bf8bcde77c5",
-    "url": "/Portfolio/static/js/2.6989d450.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.b68f9b53.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "566941352c79812bfa1a",
-    "url": "/Portfolio/static/js/main.043e3573.chunk.js"
+    "revision": "d1480c2438694b6b29ca",
+    "url": "/Portfolio/static/js/main.29e66fbd.chunk.js"
   },
   {
     "revision": "fefd097d40dd51df3811",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "25ee798521acf05465f34f02418a512e",
     "url": "/Portfolio/static/media/CV-Berihu.25ee7985.pdf"
-  },
-  {
-    "revision": "e2f2833e2d545778b6e63caa0cc3da1b",
-    "url": "/Portfolio/static/media/bg-3.e2f2833e.jpg"
   },
   {
     "revision": "2b1619ae1adb11d89ab6b9f9f1bf6c51",
