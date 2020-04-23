@@ -11,7 +11,7 @@ const Footer =()=>{
           <div className="container text-center text-md-left">
             <div className="row d-flex align-items-center">
               <div className="col-md-7 col-lg-8">
-                <h1>Contact</h1>
+                © 2020 Berihu Gebremedhin
               </div>
                 <SocialMedia /> 
               </div>

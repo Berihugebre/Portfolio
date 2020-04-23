@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container,Row, Col, ListGroup } from 'react-bootstrap';
+import {Container,Row, Col, ListGroup} from 'react-bootstrap';
 import Typical from 'react-typical'
 
 const Home = ()=>{

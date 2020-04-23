@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
 
 const Header = ()=>{
@@ -14,7 +14,7 @@ const Header = ()=>{
                     <Nav.Link href="#about">ABOUT</Nav.Link>
                     <Nav.Link href="#skills">SKILLS</Nav.Link>
                     <Nav.Link href="#projects">PROJECTS</Nav.Link>
-                    <Nav.Link href="#contact">CONTACT</Nav.Link>
+                    <Nav.Link href="https://be-chat.netlify.app/" target="_blank" rel="noopener noreferrer"><Button variant="success">Chat me</Button></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

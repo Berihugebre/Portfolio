@@ -13,11 +13,16 @@ const About = ()=>{
                 <Col sm={8} className="mt-3">
                     <h1>About Me</h1>
                     <ul>
-                        <li>I am a quality-oriented recent  Web developer graduate form <a href="https://wwhttps://hackyourfuture.be/" target="_blank" rel="noopener noreferrer" >HackYourFutureBelgium</a>.</li>
-                        <li>I participated 1 month boot-camp with <a href="https://bootcamp.hackyourfuture.be/" target="_blank" rel="noopener noreferrer">HackYourFutureBelgium boot-camp</a>. </li>
-                        <li>I worked as an ICT System Administrator for 2 years in  <a href="http://merhatibebacademy.com/" target="_blank" rel="noopener noreferrer">SMTA</a></li>
+                        <li>I am a quality-oriented recent  Web developer graduate form <a href="https://hackyourfuture.be/" target="_blank" rel="noopener noreferrer" >HackYourFutureBelgium</a>.</li>
+                        <li>I participated 1 month boot-camp with <a href="https://bootcamp.hackyourfuture.be/" target="_blank" rel="noopener noreferrer">HackYourFutureBelgium Boot-Camp</a>. </li>
+                        <li>I worked as an ICT Teacher and System Administrator for 2 years in  <a href="http://merhatibebacademy.com/" target="_blank" rel="noopener noreferrer">MerhaTibeb Acadmey</a></li>
                         <li>I Graduated in 2015 holding BSC degree in Mathematics with CGPA 3.98/4.00 from <a href="http://merhatibebacademy.com/" target="_blank" rel="noopener noreferrer">Adigrat Uniersity</a> </li>
-                        <li>I am currently looking for Web development Internship </li>
+                        <li> I am currently looking for 
+                              <ol>
+                                  <li>Full Stack Web development Internship In Belgium</li>
+                                  <li>Freelance Web Development </li>
+                              </ol>
+                         </li>
                     </ul>                    
                       
                     <h2>Contact Details</h2>
