@@ -8,19 +8,19 @@ const Home = ()=>{
         <Container id="home" fluid  className="d-flex align-items-center justify-content-center">
             <Row className="vh-100 align-items-center justify-content-center">
                 <Col sm={12} className="align-items-center mt-5 pt-5" >
-                    <h1> Hi <span role="hi-img" aria-label="hi-emoji">👋 </span>Nice to Meet You!</h1>
-                    <h1>I am {person.about.name}</h1>
-                    <h2> And I am a {` `}
-                            <Typical
-                                steps={person.about.profession}
-                                loop={1}
-                                wrapper="span"
-                            />
+                    <h1> Hi <span role="hi-img" aria-label="hi-emoji">👋 </span>Nice To Meet You!</h1>
+                    <h1>I Am {person.about.name}</h1>
+                    <h2> And I Am A {` `}
+                        <Typical
+                            steps={person.about.profession}
+                            loop={1}
+                            wrapper="span"
+                        />
                     </h2>
                     <ListGroup horizontal className="justify-content-center mt-5 pt-3">
-                        {person.socialMedias.map((media)=>{
+                        {person.socialMedias.map((media, index)=>{
                             return(
-                                <ListGroup.Item style={{border:"none", backgroundColor:"transparent"}}>
+                                <ListGroup.Item key={index} style={{border:"none", backgroundColor:"transparent"}}>
                                     <a href={media.url} target="_blank" rel="noopener noreferrer" >
                                        <i className={`${media.icon} fa-2x`} ></i>
                                     </a>
@@ -35,7 +35,6 @@ const Home = ()=>{
             </Row>
      </Container>
     )
-
 };
 
 export default Home;

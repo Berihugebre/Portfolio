@@ -37,7 +37,7 @@ const Projects = ()=>{
             <Card bg="dark" text="light">
                 <Card.Img variant="top" src={cv} className="projectImage"/>
                 <Card.Body>
-                <Card.Title>This Website</Card.Title>
+                <Card.Title>This Website</Card.Title>  
                 <Card.Text>
                     My Portfolio
                 </Card.Text>

@@ -1,55 +1,45 @@
 import React from 'react';
-import { Container,Row, Col, Table } from 'react-bootstrap';
+import { Container,Row, Col, Table, ListGroup } from 'react-bootstrap';
+import person from '../assets/PersonalData'
 
 const Skills = ()=>{
     return(
-        <Container id="skills" className="mt-5" fluid style={{backgroundColor:"#fceed1", color:"black"}}>
+        <Container id="skills" className="pt-2 pb-2 d-flex justify-content-center" fluid style={{backgroundColor:"#fceed1", color:"black"}}>
             <Row>
-                <Col sm={4} className="pt-3">
-                  <h1>Skills</h1>
-                </Col>
-                <Col sm={8} className="pt-3">
-                    <p>
-                      During those 8 month intensive training and online learning I am
-                      confident enough with the following technologies:
-                    </p>
-                    <Table responsive>
-                        <thead>
-                            <tr>
-                                <th>Front-End</th>
-                                <th>Back-End</th>
-                                <th>Database</th>
-                                <th>Version Control</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><i className="fab fa-html5 fa-3x " /></td>
-                                <td><i className="fab fa-node fa-3x"></i></td>
-                                <td><b>MySQL</b></td>
-                                <td><i className="fab fa-git fa-3x"></i></td>
-                            </tr>
-                            <tr>
-                                <td><i className="fab fa-css3-alt fa-3x" /></td>
-                                <td><b>GraphQL</b></td>
-                                <td><b>Mongo DB</b></td>
-                            <td><i className="fab fa-github fa-2x"></i></td>
-                            
-                            </tr>
-                            <tr>
-                              <td ><i className="fab fa-js fa-3x" /></td>
-                            </tr>
-                            <tr>
-                              <td><i className="fab fa-react fa-3x" /></td>
-                            </tr>
-                            <tr>
-                              <td><b>Bootstrap 4</b></td>
-                            </tr>
-                            <tr>
-                              <td><i className="fas fa-leaf fa-3x" /></td>
-                            </tr>
-                        </tbody>
-                    </Table>
+              <Col sm={2} className="d-flex align-items-center d-flex justify-content-center">
+                  <h1 >Skills</h1>
+              </Col>
+                <Col sm={10}>
+                <h2 className="p-2">Frontend</h2>
+                <ListGroup horizontal="sm" >
+                    {person.skills.frontend.map((skill, index)=>{
+                      return(<ListGroup.Item key={index}>{skill}</ListGroup.Item>)
+                    })}  
+                </ListGroup>
+                <h2 className="p-2">Backend</h2>
+                <ListGroup horizontal="sm" >
+                    {person.skills.backend.map((skill,index)=>{
+                      return(<ListGroup.Item key={index}>{skill}</ListGroup.Item>)
+                    })}  
+                </ListGroup>
+                <h2 className="p-2">Database</h2>
+                <ListGroup horizontal="sm">
+                    {person.skills.database.map((skill,index)=>{
+                      return(<ListGroup.Item key={index}>{skill}</ListGroup.Item>)
+                    })}  
+                </ListGroup>
+                <h2 className="p-2">version Control</h2>
+                <ListGroup horizontal="sm" >
+                    {person.skills.versionControl.map((skill,index)=>{
+                      return(<ListGroup.Item key={index}>{skill}</ListGroup.Item>)
+                    })}  
+                </ListGroup>
+                <h2 className="p-2">Cloud</h2>
+                <ListGroup horizontal="sm" >
+                    {person.skills.cloud.map((skill,index)=>{
+                      return(<ListGroup.Item key={index}>{skill}</ListGroup.Item>)
+                    })}  
+                </ListGroup>
                 </Col>
             </Row>
      </Container>
