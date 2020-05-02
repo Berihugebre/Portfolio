@@ -8,6 +8,12 @@ const About = ()=>{
             <Row>
                 <Col sm={4} className="mt-5">
                   <Image src={person.about.profilePiPicture} width="100%" roundedCircle />
+                  <div className="d-flex align-items-center justify-content-center flex-column pt-5">
+                        <p> I am online between 11:00 and 16:00 Central European Time </p>
+                        <a href="https://be-chat.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <Button variant="success">Chat me</Button> 
+                        </a>
+                  </div>
                 </Col>
                 <Col sm={8} className="mt-3">
                     <h1>About Me</h1>

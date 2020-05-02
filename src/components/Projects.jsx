@@ -1,49 +1,54 @@
-import React from 'react';
-import {Container, Card, CardDeck } from 'react-bootstrap';
-import vr from '../assets/images/vr.png'
-import cv from '../assets/images/cv.png'
-import bivak from '../assets/images/bivak.png'
+import React, {useState} from 'react';
+import {Container, Card, Carousel, Row, Col } from 'react-bootstrap';
+import person from '../assets/PersonalData'
 
 const Projects = ()=>{
-    const vrConnection = `https://vrconnection-9c6e5.web.app/`
+    const [index, setIndex] = useState(0);
+    const selectedProject = person.projects[index];
+   
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);    
+    };
     return(
-        <Container id="projects" fluid className="mt-5" style={{backgroundColor:"#c7af6b",textAlign:'center'}}>
-            <h1 className="pt-3 pb-3" >Projects</h1>
-            <h3 className="pb-2">Check out some of my works</h3>
-            <CardDeck style={{backgroundColor:"#balck"}}>
-            <Card bg="dark" text="light">
-                <Card.Link href={vrConnection}>
-                   <Card.Img variant="top" src={vr} className="projectImage"/>
-                </Card.Link>
-                <Card.Body>
-                <Card.Title>VRConnection</Card.Title>
-                <Card.Text>
-                    A web app that connects refugee and volunteers
-                </Card.Text>
-                <Card.Link href={vrConnection}>Check the Website</Card.Link>
-                </Card.Body>
-                
-            </Card>
-            <Card bg="dark" text="white">
-                <Card.Img variant="top" src={bivak} className="projectImage"/>
-                <Card.Body>
-                <Card.Title> Locate Bivouac Zone</Card.Title>
-                <Card.Text>
-                   a web app that helps nature lovers to find a bivouac zone in Belgium 
-                </Card.Text>
-                <Card.Link>Not live yet</Card.Link>
-                </Card.Body>
-            </Card>
-            <Card bg="dark" text="light">
-                <Card.Img variant="top" src={cv} className="projectImage"/>
-                <Card.Body>
-                <Card.Title>This Website</Card.Title>  
-                <Card.Text>
-                    My Portfolio
-                </Card.Text>
-                </Card.Body>
-            </Card>
-            </CardDeck>
+        <Container id="projects" fluid className="mt-5 vh-100" style={{ textAlign:'center'}}>
+            <h1 className="pt-3 pb-2" >Projects</h1>
+            <h3 className="pt-2 pb-2">Check out some of my works</h3>
+           <Row>
+               <Col sm={6} className="d-flex align-items-center justify-content-center">
+                    <Card bg="dark" text="white" className="d-bock w-100" >
+                        <Card.Body>
+                            <Card.Title>{`${index+1}. ${selectedProject.title}`}</Card.Title>
+                                <Card.Text>
+                                  <span>{selectedProject.about}</span>
+                                  <h5>Technologies used:</h5>
+                                   <span> {selectedProject.technologies.map((t,i)=>{
+                                        return (<span key={i}>{`${t}, `}</span>)
+                                    })}
+                                    </span>
+                                </Card.Text>
+                                
+                                <Card.Link target="_blank" rel="noopener noreferrer" href={selectedProject.url}>Check The Website</Card.Link>
+                        </Card.Body>
+                    </Card> 
+               </Col>
+               <Col sm={6} className="d-flex justify-content-center align-items-center pb-2"> 
+                    <Carousel activeIndex={index} onSelect={handleSelect} className="p-5">
+                        {person.projects.map((project, i)=>{
+                        return    (
+                          <Carousel.Item key={i}>
+                                <img
+                                className="d-block w-100"
+                                src={project.image}
+                                alt={project.title}
+                                />
+                            <Carousel.Caption>
+                                <a target="_blank" rel="noopener noreferrer" href={project.url}>Check The Website</a>
+                            </Carousel.Caption>
+                            </Carousel.Item> )
+                        })}
+                    </Carousel>
+               </Col>
+           </Row>
     </Container>
     )
 

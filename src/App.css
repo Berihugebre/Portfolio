@@ -1,6 +1,6 @@
 body, html{
- /* background-color:;    */
- background-image: linear-gradient(#107896,rgb(104, 146, 170),rgb(75, 75, 78)); 
+ background-color:#107896;   
+ /* background-image: linear-gradient(#107896,rgb(104, 146, 170),rgb(75, 75, 78));  */
  color: rgb(243, 235, 243);
 }
 a:active{
@@ -18,4 +18,14 @@ a:active{
 
 .drop_down :hover{
     color:rgb(196, 117, 27);
+}
+
+h2{
+  background-color: #7936a1;
+    text-align: center;
+    color:white;
+}
+
+h1 >i {
+  background-color: #fb2454;
 }

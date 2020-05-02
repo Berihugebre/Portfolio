@@ -5,18 +5,18 @@ import person from '../assets/PersonalData'
 
 const Home = ()=>{
     return(
-        <Container id="home" fluid  className="d-flex align-items-center justify-content-center">
-            <Row className="vh-100 align-items-center justify-content-center">
+        <Container id="home" fluid  className="d-flex align-items-center justify-content-center vh-100">
+            <Row className=" align-items-center justify-content-center">
                 <Col sm={12} className="align-items-center mt-5 pt-5" >
-                    <h1> Hi <span role="hi-img" aria-label="hi-emoji">👋 </span>Nice To Meet You!</h1>
+                    <h1> Hi <span role="img" aria-label="hi-emoji">👋 </span>Nice To Meet You!</h1>
                     <h1>I Am {person.about.name}</h1>
-                    <h2> And I Am A {` `}
+                    <h1> And I Am A {` `}
                         <Typical
                             steps={person.about.profession}
                             loop={1}
-                            wrapper="span"
+                            wrapper="i"
                         />
-                    </h2>
+                    </h1>
                     <ListGroup horizontal className="justify-content-center mt-5 pt-3">
                         {person.socialMedias.map((media, index)=>{
                             return(
