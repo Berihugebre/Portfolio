@@ -32,7 +32,7 @@ const Projects = ()=>{
                     </Card> 
                </Col>
                <Col sm={6} className="d-flex justify-content-center align-items-center pb-2"> 
-                    <Carousel activeIndex={index} onSelect={handleSelect} className="p-5">
+                    <Carousel activeIndex={index} onSelect={handleSelect} className="p-5 m-5">
                         {person.projects.map((project, i)=>{
                         return    (
                           <Carousel.Item key={i}>
