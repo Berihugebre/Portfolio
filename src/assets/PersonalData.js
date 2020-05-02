@@ -1,5 +1,11 @@
 import profilePiPicture from './images/profilepic.jpeg'
 import resume from './documents/CV-Berihu.pdf'
+import vrconnetion from './images/vrconnection.png'
+import merhatibebAcademy from './images/merhatibeb.png'
+import portfolio from './images/portfolio.png'
+import bivak from './images/bivak.png';
+import chatMe from './images/chat.png'
+
 const personData = {
     about:{
             name:`Berihu Gebremedhin`,
@@ -53,47 +59,47 @@ const personData = {
     currentStatus:[`Full Stack Web Development Internship In Belgium`, `Freelance Web Development`],
 
     skills:{
-            frontend:[`HTML5`,`CSS3`,`JavaScript`,`React`,`Bootstrap`, `Wordpress`, `Elementor` ],
+            frontend:[`HTML5`,`CSS3`,`JavaScript`,`React`,`Bootstrap`, `Wordpress`, `Elementor`,`Leaflet` ],
             backend:[`Node`, `Express`,`GraphQL`,`Socket.io`],
             database:[`MongoDB`,`MYSQL`],
             versionControl:[`Git`,`Github` ],
-            cloud:[`Heroku`, `Netlify`,`Firebase`,`siteground`]
+            cloud:[`Heroku`, `Netlify`,`Firebase`,`Siteground`]
         },
     
     projects:[
         {
-            Title:"Merhatibeb Academy",
-            technologies:['wordpress', `Elementor`,`siteground`],
-            about:`a school website`,
-            image:`https://`,
+            title:"Merhatibeb Academy",
+            technologies:['wordpress', `Elementor`,`Siteground`],
+            about:`A private school website`,
+            image:merhatibebAcademy,
             url:`http://merhatibebacademy.com/`
         },
         {
-            Title:" VRConection",
+            title:" VRConection",
             technologies:['React', `Bootstrap`,`Nodejs`,`Mongodb`,`Express`, `Firebase`,`google Cloud Platform`],
             about:`A web app that connects refugee and volunteers`,
-            image:`https://`,
+            image:vrconnetion,
             url:`https://vrconnection-9c6e5.web.app/`
         },
         {
-            Title:"Chat-Me",
+            title:"Chat-Me",
             technologies:['React', `CSS3`,`Socket.io`,`Nodejs`, `Netlify`,`Heroku`],
             about:`A real time chat app`,
-            image:`https://`,
+            image:chatMe,
             url:`https://be-chat.netlify.app/`
         },
         {
-            Title:" Portfolio",
+            title:" Portfolio",
             technologies:['React', `Bootstrap`,`Netlify`],
             about:`personal portfolio about me `,
-            image:`https://`,
+            image:portfolio,
             url:`https://be-chat.netlify.app/`
         },
         {
-            Title:" Locate Bivouac Zone",
+            title:" Locate Bivouac Zone",
             technologies:['React',`Open Street Map`, `Leaflet`,`Express`,`Mongodb`,`Heroku`],
             about:`a web app that helps nature lovers to find a bivouac zone in Belgium`,
-            image:`https://`,
+            image:bivak,
             url:`https://be-chat.netlify.app/`
         }
   ]
