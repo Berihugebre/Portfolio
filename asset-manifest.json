@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.cb6bd365.chunk.css",
-    "main.js": "/Portfolio/static/js/main.c20c7a6e.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.c20c7a6e.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.1bf34bb2.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.1bf34bb2.js.map",
+    "main.css": "/Portfolio/static/css/main.f40c476c.chunk.css",
+    "main.js": "/Portfolio/static/js/main.97478379.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.97478379.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.27665315.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.27665315.js.map",
     "static/css/2.de424728.chunk.css": "/Portfolio/static/css/2.de424728.chunk.css",
-    "static/js/2.40acdd11.chunk.js": "/Portfolio/static/js/2.40acdd11.chunk.js",
-    "static/js/2.40acdd11.chunk.js.map": "/Portfolio/static/js/2.40acdd11.chunk.js.map",
+    "static/js/2.dbffdf6d.chunk.js": "/Portfolio/static/js/2.dbffdf6d.chunk.js",
+    "static/js/2.dbffdf6d.chunk.js.map": "/Portfolio/static/js/2.dbffdf6d.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.1b4cdcd180caee1536e532f2727a358b.js": "/Portfolio/precache-manifest.1b4cdcd180caee1536e532f2727a358b.js",
+    "precache-manifest.20e75e9344ca5ba1577404c52aaaf160.js": "/Portfolio/precache-manifest.20e75e9344ca5ba1577404c52aaaf160.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Portfolio/static/css/2.de424728.chunk.css.map",
-    "static/css/main.cb6bd365.chunk.css.map": "/Portfolio/static/css/main.cb6bd365.chunk.css.map",
-    "static/js/2.40acdd11.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.40acdd11.chunk.js.LICENSE.txt",
+    "static/css/main.f40c476c.chunk.css.map": "/Portfolio/static/css/main.f40c476c.chunk.css.map",
+    "static/js/2.dbffdf6d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.dbffdf6d.chunk.js.LICENSE.txt",
     "static/media/CV-Berihu.pdf": "/Portfolio/static/media/CV-Berihu.25ee7985.pdf",
-    "static/media/bivak.png": "/Portfolio/static/media/bivak.2b1619ae.png",
-    "static/media/cv.png": "/Portfolio/static/media/cv.c715b146.png",
+    "static/media/bivak.png": "/Portfolio/static/media/bivak.d3000e1f.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.c770c24e.png",
+    "static/media/merhatibeb.png": "/Portfolio/static/media/merhatibeb.7c95e666.png",
+    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.561e8b93.png",
     "static/media/profilepic.jpeg": "/Portfolio/static/media/profilepic.5c4a55f6.jpeg",
-    "static/media/vr.png": "/Portfolio/static/media/vr.2f7314f2.png"
+    "static/media/vrconnection.png": "/Portfolio/static/media/vrconnection.9a2db4e2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1bf34bb2.js",
+    "static/js/runtime-main.27665315.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.40acdd11.chunk.js",
-    "static/css/main.cb6bd365.chunk.css",
-    "static/js/main.c20c7a6e.chunk.js"
+    "static/js/2.dbffdf6d.chunk.js",
+    "static/css/main.f40c476c.chunk.css",
+    "static/js/main.97478379.chunk.js"
   ]
 }

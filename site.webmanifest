@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "portfolio",
+    "short_name": "cv",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
