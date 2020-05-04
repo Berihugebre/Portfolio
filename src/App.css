@@ -29,3 +29,20 @@ h2{
 h1 >i {
   background-color: #fb2454;
 }
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+}
+.contact-container input{
+  padding: 1%;
+}
+
+.contact-name{
+  padding-bottom:3%;
+}
+
+.contact-email{
+  padding-bottom:3%;
+}
+
