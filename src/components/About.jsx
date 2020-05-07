@@ -1,57 +1,50 @@
 import React from 'react';
-import { Container,Row, Col, Image, ListGroup, Button } from 'react-bootstrap';
 import person from '../assets/PersonalData'
 
 const About = ()=>{
     return(
-        <Container id="about" fluid className="mt-5" style={{backgroundColor:'#393939', color: 'rgb(243, 235, 243)'}}>
-            <Row>
-                <Col sm={4} className="mt-5">
-                  <Image src={person.about.profilePiPicture} width="100%" roundedCircle />
-                  <div className="d-flex align-items-center justify-content-center flex-column pt-5">
-                        <p> I am online between 11:00 and 16:00 Central European Time </p>
-                        <a href="https://be-chat.netlify.app/" target="_blank" rel="noopener noreferrer">
-                            <Button variant="success">Chat me</Button> 
-                        </a>
-                  </div>
-                </Col>
-                <Col sm={8} className="mt-3">
-                    <h1>About Me</h1>
+        <div class="container-fluid padding" id="about">
+            <div class="row headers padding">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">About Me</h1>
+                </div>
+                <hr />
+                <div className="col-xs-12 col-sm-12 col-md-4 padding">
+                    <img src={person.about.profilePiPicture} width="100%" alt="profile" className="rounded-circle"/>
+                </div>
+                <div className="col-xs-12 col-sm-12 col-md-8">
                     <ul>
                         {person.background.map((bg,index)=>(
                             <li key={index}>{`${bg.experience} `} 
-                                <a href={bg.url} target="_blank" rel="noopener noreferrer" >
+                                <a href={bg.url} target="_blank" rel="noopener noreferrer" className="education">
                                     {bg.school}
                                 </a>
                             </li>
                         ))}
-                        <li> I am currently looking for
-                            <ol>
-                                {person.currentStatus.map((status, index)=>(
-                                    <li key={index}>{status}</li>
-                                ))}
-                            </ol>
-                        </li>
-                    </ul>                    
-                      
-                    <h2>Contact Details</h2>
-                   
-                    <ListGroup variant="flush" style={{border:"none", width:"100%", backgroundColor:"white", color:"black"}}>
-                        <ListGroup.Item style={{border:"none"}} key={1}>{person.about.name}</ListGroup.Item>
-                        <ListGroup.Item style={{border:"none"}}key={2}><i className="fas fa-mobile-alt"/> {person.about.phone}</ListGroup.Item>
-                        <ListGroup.Item style={{border:"none"}}key={3}><i className="fas fa-envelope"/> {person.about.email}</ListGroup.Item>
-                        <ListGroup.Item style={{border:"none"}}key={4}><i className="fas fa-map-marker-alt"/> {person.about.address}</ListGroup.Item>
-                    </ListGroup> 
-                        
-                    <a href={person.about.resume} target="_blank" rel="noopener noreferrer">
-                        <Button className="m-3 text-align-center">
-                            <i className="fas fa-download " /> 
-                               {' '} Download Resume
-                        </Button>
-                    </a>                   
-                </Col>
-            </Row>
-     </Container>
+                    </ul>     
+                </div>
+            </div>
+            <div className="row">
+              <div class="container">
+                <div class="row jumbotron">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                        <p class="lead">
+                            I am currently looking for MERN (MongoDB, Express, React and Node) Stack development Internship.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                        <a href={person.about.resume} target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="btn btn-outline-secondary btn-lg">
+                            <i className="fas fa-download pr-1"></i>
+                                Resume
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <hr className="my-4"/>
+        </div>
     )
 
 };

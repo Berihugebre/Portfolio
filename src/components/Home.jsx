@@ -1,39 +1,36 @@
 import React from 'react';
-import {Container,Row, Col, ListGroup} from 'react-bootstrap';
 import Typical from 'react-typical'
 import person from '../assets/PersonalData'
+import bg1 from '../assets/images/bg-1.jpeg'
+import bg2 from '../assets/images/bg-2.jpeg'
+import bg3 from '../assets/images/bg-3.jpeg'
 
 const Home = ()=>{
     return(
-        <Container id="home" fluid  className="d-flex align-items-center justify-content-center vh-100">
-            <Row className=" align-items-center justify-content-center">
-                <Col sm={12} className="align-items-center mt-5 pt-5" >
-                    <h1> Hi <span role="img" aria-label="hi-emoji">👋 </span>Nice To Meet You!</h1>
-                    <h1>I Am {person.about.name}</h1>
-                    <h1> And I Am A {` `}
-                        <Typical
-                            steps={person.about.profession}
-                            loop={1}
-                            wrapper="i"
-                        />
-                    </h1>
-                    <ListGroup horizontal className="justify-content-center mt-5 pt-3">
-                        {person.socialMedias.map((media, index)=>{
-                            return(
-                                <ListGroup.Item key={index} style={{border:"none", backgroundColor:"transparent"}}>
-                                    <a href={media.url} target="_blank" rel="noopener noreferrer" >
-                                       <i className={`${media.icon} fa-2x`} ></i>
-                                    </a>
-                                </ListGroup.Item>
-                            ) 
-                        })}
-                    </ListGroup>
-                </Col>
-                <Col className="d-flex align-items-center justify-content-center mt-5">
-                  <a href="#about" className="drop_down"><i className="fas fa-chevron-circle-down fa-3x"/></a>
-                </Col>
-            </Row>
-     </Container>
+        <div id="slides" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ol>
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img src={bg1} alt="background-1"/>
+                    <div className="carousel-caption">
+                        <h1 className="display-4">Hi <span role="img" aria-label="hi-emoji">👋 </span>Nice To Meet You!</h1>
+                        <h3>I'm A {` `} <Typical steps={person.about.profession} loop={1} wrapper="span" /> </h3>
+                        <a href="#contact"><button type="button" className="btn btn-outline-light btn-lg">Contact Me</button></a>
+                        <a href="#projects"><button type="button" className="btn btn-primary btn-lg ml-3">See Projects</button></a>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img src={bg2} alt="background-2"/>
+                </div>
+                <div className="carousel-item">
+                    <img src={bg3} alt="background-3"/>
+                </div>
+            </div>
+        </div>
     )
 };
 
