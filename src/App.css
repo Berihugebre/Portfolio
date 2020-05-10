@@ -3,16 +3,34 @@ html, body{
   width: 100%;
   font-family: 'Roboto', 'Poppins', sans-serif;
   color: #222;
+  overflow-x: hidden;
+  position: relative;
 }
+
 /* Header */
 .navbar{
   padding:13px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  background: rgba(0,0,0,0.6)!important;
+}
+.navbar-brand img{
+  height: 2rem;
 }
 .navbar-nav li{
   padding-right: 20px;
 }
 .nav-link{
   font-size: 18px;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:#1ebba3;
 }
 
 /*Home */
@@ -36,14 +54,27 @@ html, body{
   padding-bottom: 1rem;
 }
 .carousel-caption h3 span{
-  background-color: #7936a1;
+  background-color:transparent;
 }
-
+.carousel-caption li i{
+  font-size:200%;
+  margin-top:50%;
+}
 .btn-outline-light:hover{
   background-color: #fb2454;
   border: 1px solid #fb2454;
 }
 
+.carousel-caption .dropdown{
+  margin-top: 10rem;
+}
+.fa-arrow-alt-circle-down{
+  font-size: 300%;
+  color:#100d29;
+}
+.fa-arrow-alt-circle-down:hover{
+  color:#1e09dd;
+}
 /* About */
 .headers{
   width:75%;
@@ -95,13 +126,13 @@ html, body{
   padding:5px;
   font-size: 200%;
 }
-.language{
+/* .language{
   display: inline;
 }
 .language li{
   list-style: none;
   font-size: 18px;
-}
+} */
 
 /* Projects */
 .fa-caret-down{
@@ -182,7 +213,7 @@ hr.light-100{
     padding: 8px 14px;
   }
   .display-4{
-    font-size: 200%;
+    font-size: 250%;
   }
   .skill .fas{
     font-size:3em;
@@ -190,10 +221,17 @@ hr.light-100{
   }
   .skill h3{
     padding:4px;
-    font-size: 180%;
+    font-size: 150%;
   }
   .language li{
     font-size: 15px;
+  }
+  .carousel-caption li i{
+    font-size:150%;
+    margin-top:45%;
+  }
+  .carousel-caption .dropdown{
+    margin-bottom: 5rem;
   }
   
 }
@@ -218,16 +256,22 @@ hr.light-100{
     display:none;
   }
   .display-4{
-    font-size: 140%;
+    font-size: 210%;
   }
-  
+  .carousel-caption li i{
+    font-size:100%;
+    margin-top:40%;
+  }
+  .carousel-caption .dropdown{
+    margin-top: 17rem;
+  }
   .skill .fas{
     font-size:2em;
     margin: 0.3rem;
   }
   .skill h3{
     padding:4px;
-    font-size: 160%;
+    font-size: 140%;
   }
   .language li{
     font-size: 15px;
@@ -260,9 +304,9 @@ figure {
 }
 
 /*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
+/* [class*="col-"] {
     padding: 1rem;
-}
+} */
 
 
 

@@ -3,16 +3,16 @@ import logo from '../assets/images/logo.png';
 
 const Header = ()=>{
     return(
-        <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
             <div className="container-fluid">
-                <a className="navbar-brand" href="#slides"><img src={logo} width="50" height="50" alt="berihu logo"/></a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <a className="navbar-brand" href="#home"><img src={logo}  alt="berihu logo"/></a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-spy="scroll" data-target="#navbarResponsive">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
-                    <ul className="navbar-nav ml-auto">
+                    <ul className="navbar-nav ml-auto d-flex align-items-center justify-content-center">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#slides">Home</a>
+                            <a className="nav-link" href="#home">Home</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#about">About</a>

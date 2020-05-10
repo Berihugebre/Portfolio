@@ -59,7 +59,7 @@ const personData = {
         {
             school:``,
             url:``,
-            experience:`I'm top fun of playing Ping pong `
+            experience:`Every morning I'm a new version of myself and I'm top fun of playing Ping pong `
         },
 
     ],

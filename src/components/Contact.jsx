@@ -4,9 +4,9 @@ import person from '../assets/PersonalData'
 const Contact =()=>{
     return(
         <div id="contact" className="container-fluid padding" bg="dark">
-            <div class="row headers text-center padding">
-                <div class="col-12">
-                    <h1 class="display-4">Contact Me</h1>
+            <div className="row headers text-center padding">
+                <div className="col-12">
+                    <h1 className="display-4">Contact Me</h1>
                 </div>
                 <hr/>
             </div>
@@ -14,7 +14,7 @@ const Contact =()=>{
                 <div className="col-sm-12 col-md-6 col-lg-6">
                     <div className="container-fluid padding">
                         <div className="row text-center padding">
-                            <div className="col-12">
+                            <div className="col-12 p-5">
                                 <h2>Follow Me</h2>
                                 <ul className="col-12 media d-flex justify-content-center list-inline">
                                     {person.socialMedias.map((media, index) =>(
@@ -52,8 +52,8 @@ const Contact =()=>{
                     <div className="form-group">
                         <input type="email" name="email" placeholder="Your Email" className="form-control" required/>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Your Message"  rows="6" required></textarea>
+                    <div className="form-group">
+                        <textarea className="form-control" name="message" placeholder="Your Message"  rows="6" required></textarea>
                     </div>
                        <button type="submit" className="btn btn-outline-primary btn-lg">Send Message</button>
                     </form>

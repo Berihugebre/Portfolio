@@ -3,7 +3,7 @@ import person from '../assets/PersonalData'
 
 const Projects = ()=>{
     return(
-        <div id="projects" className="container-fluid padding">
+        <div id="projects" className="container-fluid padding bg-dark text-white">
             <div className="row headers padding text-center">
                 <div className="col-12">
                     <h1 className="display-4">projects</h1>
@@ -24,7 +24,7 @@ const Projects = ()=>{
                                             <i className="fas fa-caret-down" />
                                             </button>
                                         <div id={index} className="collapse">
-                                            <div className="container-fluid padding">
+                                            <div className="container-fluid padding bg-light text-dark">
                                                 <div className="row">
                                                     <div className="col-12">
                                                         <h5 className="pt-4 text-center">{project.title}</h5>
@@ -38,11 +38,11 @@ const Projects = ()=>{
                                                           ))}  
                                                         </ul>
                                                     </div>
-                                                    <div className="col-12">
+                                                    <div className="col-12 text-center">
                                                     <a href={project.url} target="_blank" rel="noopener noreferrer" className="card-title">
-                                                       <button className="btn btn-outline-warning btn-sm">
+                                                       <button className="btn btn-outline-success btn-sm">
                                                            Visit Website
-                                                           <i class="fas fa-long-arrow-alt-right pl-2"/>
+                                                           <i className="fas fa-long-arrow-alt-right pl-2"/>
                                                         </button>
                                                     </a >
                                                     </div>
