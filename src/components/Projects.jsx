@@ -17,12 +17,14 @@ const Projects = ()=>{
                         return(
                             <div key={index} className="col-xs-12 col-sm-12 col-md-6 col-lg-4 padding">
                                 <div className="card">
-                                    <img src={project.image} alt={project.title} className="card-img-top" />
+                                      <a href={project.url} target="_blank" rel="noopener noreferrer" className="image-link">
+                                         <img src={project.image} alt={project.title} className="card-img-top" />
+                                      </a> 
                                     <div className="card-body">
                                         <button className="btn btn-outline-info" data-toggle="collapse" data-target={`#${index}`}>
                                             Click For Detail
                                             <i className="fas fa-caret-down" />
-                                            </button>
+                                        </button>
                                         <div id={index} className="collapse">
                                             <div className="container-fluid padding bg-light text-dark">
                                                 <div className="row">

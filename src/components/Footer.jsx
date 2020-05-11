@@ -36,7 +36,9 @@ const Footer =()=>{
                     </div>
                     <div className="col-12">
                         <hr className="light-100" />
-                        <h5>&copy;2020 Berihu Gebremedhin</h5>
+                        <h5 className="footer-media">&copy;2020 <a href="https://berihu.netlify.app/" target="_blank" rel="noopener noreferrer">
+                           Berihu Gebremedhin</a> 
+                        </h5>
                     </div>
                 </div>
             </div>

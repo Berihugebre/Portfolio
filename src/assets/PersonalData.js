@@ -64,8 +64,6 @@ const personData = {
 
     ],
 
-    currentStatus:[`Full Stack Web Development Internship In Belgium`, `Freelance Web Development`],
-
     skills:[
         {
             name:`frontend`,
@@ -128,7 +126,7 @@ const personData = {
             technologies:['React',`Open Street Map`, `Leaflet`,`Express`,`Mongodb`,`Heroku`],
             about:`a web app that helps nature lovers to find a bivouac zone in Belgium`,
             image:bivak,
-            url:`https://be-chat.netlify.app/`
+            url:`https://bivak.netlify.app/`
         }
   ]
 };

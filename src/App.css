@@ -66,7 +66,7 @@ html, body{
 }
 
 .carousel-caption .dropdown{
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 .fa-arrow-alt-circle-down{
   font-size: 300%;
@@ -126,13 +126,6 @@ html, body{
   padding:5px;
   font-size: 200%;
 }
-/* .language{
-  display: inline;
-}
-.language li{
-  list-style: none;
-  font-size: 18px;
-} */
 
 /* Projects */
 .fa-caret-down{
@@ -142,11 +135,13 @@ html, body{
 .btn-outline-info{
   width: 100%;
 }
-
-.card img:hover{
-  opacity: 0.5;
+.card{
+  max-width: 90%;
 }
-
+.image-link:hover{
+  opacity: 0.6;
+  background-color:black;
+}
 /* Contact */
 .media .list-inline-item{
   font-size: 150%;
