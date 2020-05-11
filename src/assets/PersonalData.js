@@ -20,15 +20,18 @@ const personData = {
     socialMedias:[
         {
             url:`https://www.linkedin.com/in/berihu-gebre/`,
-            icon:`fab fa-linkedin-in`
+            icon:`fab fa-linkedin-in`,
+            name:`Linkedin`
         },
         {
             url:`https://github.com/berihugebre`,
-            icon:`fab fa-github`
+            icon:`fab fa-github`,
+            name:`Github`
         },
         {
             url:`https://twitter.com/Berihu74658089`,
-            icon:`fab fa-twitter`
+            icon:`fab fa-twitter`,
+            name:`Twitter`
         }
     ],
 
@@ -53,18 +56,41 @@ const personData = {
             url:`http://www.adu.edu.et/`,
             experience:`I graduated in 2015 holding BSC degree in mathematics with CGPA 3.98/4.00 from`
         },
+        {
+            school:``,
+            url:``,
+            experience:`Every morning I'm a new version of myself and I'm top fun of playing Ping pong `
+        },
 
     ],
 
-    currentStatus:[`Full Stack Web Development Internship In Belgium`, `Freelance Web Development`],
-
-    skills:{
-            frontend:[`HTML5`,`CSS3`,`JavaScript`,`React`,`Bootstrap`, `Wordpress`, `Elementor`,`Leaflet` ],
-            backend:[`Node`, `Express`,`GraphQL`,`Socket.io`],
-            database:[`MongoDB`,`MYSQL`],
-            versionControl:[`Git`,`Github` ],
-            cloud:[`Heroku`, `Netlify`,`Firebase`,`Siteground`]
+    skills:[
+        {
+            name:`frontend`,
+            language:[`HTML5`,`CSS3`,`JavaScript`,`React`,`Bootstrap 4`, `Wordpress`, `Elementor`,`Leaflet` ],
+            icon:`fas fa-laptop-code`
         },
+        {
+            name:`backend`,
+            language:[`Node`, `Express`,`GraphQL`,`Socket.io`],
+            icon:`fas fa-code`
+        },
+        {
+            name:`database`,
+            language:[`MongoDB`,`MYSQL`],
+            icon:`fas fa-database`
+        },
+        {
+            name:`version control`,
+            language:[`Git`,`Github`],
+            icon:`fas fa-code-branch`
+        },
+        {
+            name:`cloud`,
+            language:[`Heroku`, `Netlify`,`Firebase`,`Siteground`],
+            icon:`fas fa-cloud`
+        }
+    ],
     
     projects:[
         {
@@ -76,7 +102,7 @@ const personData = {
         },
         {
             title:" VRConection",
-            technologies:['React', `Bootstrap`,`Nodejs`,`Mongodb`,`Express`, `Firebase`,`google Cloud Platform`],
+            technologies:['React', `Bootstrap`,`Nodejs`,`Mongodb`,`Express`, `Firebase`,`Google Cloud Platform`],
             about:`A web app that connects refugee and volunteers`,
             image:vrconnetion,
             url:`https://vrconnection-9c6e5.web.app/`
@@ -93,14 +119,14 @@ const personData = {
             technologies:['React', `Bootstrap`,`Netlify`],
             about:`personal portfolio about me `,
             image:portfolio,
-            url:`https://be-chat.netlify.app/`
+            url:`https://berihu.netlify.app/`
         },
         {
             title:" Locate Bivouac Zone",
             technologies:['React',`Open Street Map`, `Leaflet`,`Express`,`Mongodb`,`Heroku`],
             about:`a web app that helps nature lovers to find a bivouac zone in Belgium`,
             image:bivak,
-            url:`https://be-chat.netlify.app/`
+            url:`https://bivak.netlify.app/`
         }
   ]
 };

@@ -1,39 +1,54 @@
 import React from 'react';
-import {Container,Row, Col, ListGroup} from 'react-bootstrap';
 import Typical from 'react-typical'
 import person from '../assets/PersonalData'
+import bg1 from '../assets/images/bg-1.jpg'
+import bg2 from '../assets/images/bg-2.jpg'
+import bg3 from '../assets/images/bg-3.jpg'
 
 const Home = ()=>{
     return(
-        <Container id="home" fluid  className="d-flex align-items-center justify-content-center vh-100">
-            <Row className=" align-items-center justify-content-center">
-                <Col sm={12} className="align-items-center mt-5 pt-5" >
-                    <h1> Hi <span role="img" aria-label="hi-emoji">👋 </span>Nice To Meet You!</h1>
-                    <h1>I Am {person.about.name}</h1>
-                    <h1> And I Am A {` `}
-                        <Typical
-                            steps={person.about.profession}
-                            loop={1}
-                            wrapper="i"
-                        />
-                    </h1>
-                    <ListGroup horizontal className="justify-content-center mt-5 pt-3">
-                        {person.socialMedias.map((media, index)=>{
-                            return(
-                                <ListGroup.Item key={index} style={{border:"none", backgroundColor:"transparent"}}>
-                                    <a href={media.url} target="_blank" rel="noopener noreferrer" >
-                                       <i className={`${media.icon} fa-2x`} ></i>
+        <div id="home" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#home" data-slide-to="0" className="active"></li>
+                <li data-target="#home" data-slide-to="1"></li>
+                <li data-target="#home" data-slide-to="2"></li>
+            </ol>
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img src={bg1} alt="background-1"/>
+                    <div className="carousel-caption">
+                        <h3>Hi <span role="img" aria-label="hi-emoji">👋 </span>Nice To Meet You!</h3>
+                        <h3>I'm A {` `} <Typical steps={person.about.profession} loop={1} wrapper="span" /> </h3>
+                        <a href="#contact"><button type="button" className="btn btn-outline-light btn-lg">Contact Me</button></a>
+                        <a href="#projects"><button type="button" className="btn btn-primary btn-lg ml-3">See Projects</button></a>
+                         <div className="dropdown animate__animated animate__bounce animate__repeat-3 animate__slower">
+                            <a href="#about"><i className="fas fa-arrow-alt-circle-down"/></a>  
+                        </div>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img src={bg2} alt="background-2"/>
+                    <div className="carousel-caption">
+                        <h1>Follow Me</h1>
+                        <ul className="col-12 media d-flex justify-content-center list-inline">
+                            {person.socialMedias.map((media, index) =>(
+                                <li key={index} className='list-inline-item'>
+                                    <a href={media.url} target="_blank" rel="noopener noreferrer">
+                                        <i className={media.icon} />
                                     </a>
-                                </ListGroup.Item>
-                            ) 
-                        })}
-                    </ListGroup>
-                </Col>
-                <Col className="d-flex align-items-center justify-content-center mt-5">
-                  <a href="#about" className="drop_down"><i className="fas fa-chevron-circle-down fa-3x"/></a>
-                </Col>
-            </Row>
-     </Container>
+                                </li>
+                            ))}
+                        </ul> 
+                        <div className="dropdown animate__animated animate__bounce animate__repeat-3 animate__slower">
+                            <a href="#about"><i className="fas fa-arrow-alt-circle-down"/></a> 
+                        </div>        
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img src={bg3} alt="background-3"/>
+                </div>
+            </div>
+        </div>
     )
 };
 

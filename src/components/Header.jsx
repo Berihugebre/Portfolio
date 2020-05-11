@@ -1,24 +1,34 @@
 import React from 'react';
-import { Navbar, Nav, Button } from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
 
 const Header = ()=>{
     return(
-        <Navbar collapseOnSelect expand="lg" fixed="top" variant="dark" style={{backgroundColor: `#107896` }}>
-            <Navbar.Brand href="#home">
-                <img src={logo} width="50" height="50" className="d-inline-block align-top" alt="Berihu logo"/>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav ">
-                <Nav className="d-flex align-items-center justify-content-center">
-                    <Nav.Link href="#home">HOME</Nav.Link>
-                    <Nav.Link href="#about">ABOUT</Nav.Link>
-                    <Nav.Link href="#skills">SKILLS</Nav.Link>
-                    <Nav.Link href="#projects">PROJECTS</Nav.Link>
-                    <Nav.Link href="https://be-chat.netlify.app/" target="_blank" rel="noopener noreferrer"><Button variant="success">Chat me</Button></Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
+            <div className="container-fluid">
+                <a className="navbar-brand" href="#home"><img src={logo}  alt="berihu logo"/></a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-spy="scroll" data-target="#navbarResponsive">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarResponsive">
+                    <ul className="navbar-nav ml-auto d-flex align-items-center justify-content-center">
+                        <li className="nav-item">
+                            <a className="nav-link" href="#home">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#about">About</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#projects">Projects</a>
+                        </li><li className="nav-item">
+                            <a className="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     )
 
 };
