@@ -93,7 +93,7 @@ html, body{
 .education:hover{
   text-decoration:none; 
 }
-.jumbotron{
+#about .jumbotron{
   padding: 1rem;
   border-radius: 0;
 }
@@ -125,6 +125,34 @@ html, body{
   text-transform: uppercase;
   padding:5px;
   font-size: 200%;
+}
+
+/* testimonials */
+#skills .heading{
+  font-style: 1.9rem;
+  margin-bottom: 1.9rem;
+  text-transform: uppercase;
+}
+.heading-underline{
+  width: 5rem;
+  height: .2rem;
+  background-color:#1ebba3;
+  margin: 0 auto 2rem;
+}
+.testimonial img{
+  width: 100%;
+  border-radius: 50%;
+}
+blockquote .fa-quote-left{
+  color:#1ebba3;
+  margin: 0 1rem;
+}
+blockquote .fa-quote-right{
+  color:#1ebba3;
+  margin: 0 1rem;
+}
+.testimonial-hr{
+  border-top: 0.05rem solid #1ebba3;
 }
 
 /* Projects */
@@ -228,7 +256,10 @@ hr.light-100{
   .carousel-caption .dropdown{
     margin-bottom: 5rem;
   }
-  
+  .testimonial img{
+    height: 80%;
+    width: 80%;
+   }
 }
 @media (max-width: 576px){
   .carousel-caption{
@@ -270,6 +301,10 @@ hr.light-100{
   }
   .language li{
     font-size: 15px;
+  }
+  .testimonial img{
+   height: 80%;
+   width: 80%;
   }
 }
 
