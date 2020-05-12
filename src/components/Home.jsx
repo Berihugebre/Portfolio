@@ -1,9 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical'
 import person from '../assets/PersonalData'
-import bg1 from '../assets/images/bg-1.jpg'
-import bg2 from '../assets/images/bg-2.jpg'
-import bg3 from '../assets/images/bg-3.jpg'
 
 const Home = ()=>{
     return(
@@ -15,7 +12,7 @@ const Home = ()=>{
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={bg1} alt="background-1"/>
+                    <img src={person.backgroundSlides.slideOne} alt="background-1"/>
                     <div className="carousel-caption">
                         <h3>Hi <span role="img" aria-label="hi-emoji">👋 </span>Nice To Meet You!</h3>
                         <h3>I'm A {` `} <Typical steps={person.about.profession} loop={1} wrapper="span" /> </h3>
@@ -27,7 +24,7 @@ const Home = ()=>{
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={bg2} alt="background-2"/>
+                    <img src={person.backgroundSlides.slideTwo} alt="background-2"/>
                     <div className="carousel-caption">
                         <h1>Follow Me</h1>
                         <ul className="col-12 media d-flex justify-content-center list-inline">
@@ -45,7 +42,7 @@ const Home = ()=>{
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={bg3} alt="background-3"/>
+                    <img src={person.backgroundSlides.slideThree} alt="background-3"/>
                 </div>
             </div>
         </div>

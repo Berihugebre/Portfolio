@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../assets/images/logo.png';
+import person from '../assets/PersonalData'
 
 const Header = ()=>{
     return(
         <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
             <div className="container-fluid">
-                <a className="navbar-brand" href="#home"><img src={logo}  alt="berihu logo"/></a>
+                <a className="navbar-brand" href="#home"><img src={person.about.logo}  alt="berihu logo"/></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-spy="scroll" data-target="#navbarResponsive">
                     <span className="navbar-toggler-icon"></span>
                 </button>

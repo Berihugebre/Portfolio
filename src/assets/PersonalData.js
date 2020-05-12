@@ -6,6 +6,10 @@ import portfolio from './images/portfolio.png'
 import bivak from './images/bivak.png';
 import chatMe from './images/chat.png'
 import manon from './images/Manon-Brulard.jpg'
+import logo from './images/logo.png'
+import bg1 from './images/bg-1.jpg'
+import bg2 from './images/bg-2.jpg'
+import bg3 from './images/bg-3.jpg'
 
 const personData = {
     about:{
@@ -15,8 +19,15 @@ const personData = {
             address:`8770 Ingelmunster (Belgium)`,
             profession:[`Mathematician`,`Web Developer`],
             profilePiPicture,
-            resume
+            resume,
+            logo
         },
+
+    backgroundSlides:{
+        slideOne:bg1,
+        slideTwo:bg2,
+        slideThree:bg3
+    },
 
     socialMedias:[
         {
