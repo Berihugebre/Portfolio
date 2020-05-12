@@ -1,5 +1,5 @@
 import profilePiPicture from './images/profilepic.jpeg'
-import resume from './documents/CV-Berihu.pdf'
+import resume from './documents/resume.pdf'
 import vrconnetion from './images/vrconnection.png'
 import merhatibebAcademy from './images/merhatibeb.png'
 import portfolio from './images/portfolio.png'
