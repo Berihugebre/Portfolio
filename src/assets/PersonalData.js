@@ -5,6 +5,7 @@ import merhatibebAcademy from './images/merhatibeb.png'
 import portfolio from './images/portfolio.png'
 import bivak from './images/bivak.png';
 import chatMe from './images/chat.png'
+import manon from './images/Manon-Brulard.jpg'
 
 const personData = {
     about:{
@@ -89,6 +90,15 @@ const personData = {
             name:`cloud`,
             language:[`Heroku`, `Netlify`,`Firebase`,`Siteground`],
             icon:`fas fa-cloud`
+        }
+    ],
+
+    testimonials:[
+        {
+            message:`Berihu was one of the best student in his class. He's a true optimistic and a real team player. At the Demo Day of the bootcamp, he presented his project in front of an audience of 50 people and completed nailed it!`,
+            name:`Manon Brulard`,
+            job:`HckYourFuture Belgium Co-Founder`,
+            picture:manon
         }
     ],
     
