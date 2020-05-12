@@ -37,3 +37,5 @@ Finally, deploy it to [netlify](https://app.netlify.com/) and the ```CONTACT FOR
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## License
+[BSD 2](https://github.com/Berihugebre/Portfolio/blob/netlify/LICENSE)
