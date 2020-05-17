@@ -108,7 +108,8 @@ const personData = {
         {
             message:`Berihu was one of the best student in his class. He's a true optimistic and a real team player. At the Demo Day of the bootcamp, he presented his project in front of an audience of 50 people and completed nailed it!`,
             name:`Manon Brulard`,
-            job:`HckYourFuture Belgium Co-Founder`,
+            job:`HackYourFuture Belgium Co-Founder`,
+            url:`https://hackyourfuture.be/`,
             picture:manon
         }
     ],
