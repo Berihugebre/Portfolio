@@ -41,11 +41,13 @@ const Skills = ()=>{
                           <div className="col-xs-12 col-sm-12 col-md-8">
                               <blockquote>
                                 <i className="fas fa-quote-left" />
-                                {testimonial.message}
+                                 {testimonial.message}
                                 <i className="fas fa-quote-right" />
                                 <hr className="testimonial-hr" />
                                 <cite>&#8212;{testimonial.name}</cite> <br/>
-                                <cite>{testimonial.job}</cite>
+                                <cite className="testimonial-url"><a href={testimonial.url} target="_blank" rel="noopener noreferrer">
+                                  {testimonial.job}</a>
+                                </cite>
                               </blockquote>
                           </div>
                         </div>
