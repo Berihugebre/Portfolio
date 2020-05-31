@@ -28,7 +28,7 @@ const Contact =()=>{
                             </div>
                             <div className="col-12">
                                 <p className="lead">
-                                    I am online between 14:00 - 15:00 <br />
+                                    I am online Monday-Friday between 14:00 - 15:00 <br />
                                     European Central Time
                                 </p>
                                 <a 
