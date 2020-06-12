@@ -64,6 +64,11 @@ const personData = {
             experience:`I worked as an ICT teacher and system administrator for 2 years in`
         },
         {
+            school:`Mekelle University`,
+            url:`http://www.mu.edu.et/`,
+            experience:`I graduated in 2016 holding Postgraduate Diploma In Teaching Secondary School with CGPA 3.53/4.00 from`
+        },
+        {
             school:`Adigrat University`,
             url:`http://www.adu.edu.et/`,
             experience:`I graduated in 2015 holding BSC degree in mathematics with CGPA 3.98/4.00 from`

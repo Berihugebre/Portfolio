@@ -32,7 +32,7 @@ const About = ()=>{
                 <div className="row jumbotron">
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xl-9">  
                         <p className="lead">
-                            I am currently looking for MERN (MongoDB, Express, React and Node) Stack web development job.
+                        Enthusiastic and fast-learner looking for junior JavaScript Development job.
                         </p>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
