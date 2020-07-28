@@ -13,8 +13,8 @@ import bg3 from './images/bg-3.jpg'
 
 const personData = {
     about:{
-            name:`Berihu Gebremedhin`,
-            phone: `+32465327617`,
+            name:`Loic`,
+            phone: `+3246ghghg`,
             email:`berihu05.20@gmail.com`,
             address:`8770 Ingelmunster (Belgium)`,
             profession:[`Mathematician`,`Web Developer`],
@@ -48,6 +48,11 @@ const personData = {
     ],
 
     background:[
+        {
+            school:`Open Summer Of Code`,
+            url:`https://summerofcode.be/`,
+            experience:`Currently Back-End developer at `
+        },
         {
             school:`HackYourFutureBelgium`,
             url:`https://hackyourfuture.be/`,
@@ -84,7 +89,7 @@ const personData = {
     skills:[
         {
             name:`frontend`,
-            language:[`HTML5`,`CSS3`,`JavaScript`,`React`,`Bootstrap 4`, `Wordpress`, `Elementor`,`Leaflet` ],
+            language:[`HTML5`,`CSS3`,`JavaScript`,`React`,`Bootstrap 4`, `Wordpress`, `Elementor`,`Leaflet`,`Svelte` ],
             icon:`fas fa-laptop-code`
         },
         {
