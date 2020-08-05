@@ -13,8 +13,8 @@ import bg3 from './images/bg-3.jpg'
 
 const personData = {
     about:{
-            name:`Loic`,
-            phone: `+3246ghghg`,
+            name:`Berihu Gebremedhin`,
+            phone: `+32465327617`,
             email:`berihu05.20@gmail.com`,
             address:`8770 Ingelmunster (Belgium)`,
             profession:[`Mathematician`,`Web Developer`],
